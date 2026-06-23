@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Options Trading — Live Dashboard</title>
+  <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+  <style>
+    :root {
+      --bg:#0b0e14; --panel:#141925; --panel2:#1c2330; --text:#e5e7eb; --muted:#9ca3af;
+      --bull:#22c55e; --bear:#ef4444; --accent:#6366f1; --yellow:#eab308;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Inter,Segoe UI,Arial,sans-serif; }
+    .wrap { max-width:980px; margin:0 auto; padding:20px; }
+    h1 { font-size:22px; margin:0; }
+    .row { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+    .muted { color:var(--muted); font-size:13px; }
+    .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:12px; font-weight:600; }
+    .b-live { background:rgba(34,197,94,.2); color:var(--bull); }
+    .b-demo { background:rgba(234,179,8,.2); color:var(--yellow); }
+    .card { background:var(--panel); border:1px solid rgba(255,255,255,.07); border-radius:14px; padding:18px; margin-top:16px; }
+    .card.accent { border-color:rgba(99,102,241,.4); }
+    .kicker { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); }
+    .big { font-size:26px; font-weight:800; margin-top:4px; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    .chip { background:var(--panel2); border-radius:999px; padding:4px 10px; font-size:12px; }
+    .chip b { font-weight:700; }
+    .bar { height:12px; border-radius:6px; background:var(--panel2); overflow:hidden; margin-top:6px; }
+    .bar > div { height:100%; }
+    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:14px; }
+    .stat { background:var(--panel2); border-radius:10px; padding:8px 12px; }
+    .stat .l { font-size:11px; color:var(--muted); }
+    .stat .v { font-weight:700; margin-top:2px; }
+    .quotes { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:8px; }
+    .bull{color:var(--bull)} .bear{color:var(--bear)} .gray{color:var(--muted)}
+    .action { padding:6px 14px; border-radius:999px; font-weight:700; font-size:15px; }
+    .a-call{background:rgba(34,197,94,.2);color:var(--bull)} .a-put{background:rgba(239,68,68,.2);color:var(--bear)}
+    .a-wait{background:rgba(156,163,175,.2);color:var(--muted)}
+    .q-A{background:rgba(34,197,94,.2);color:var(--bull)} .q-B{background:rgba(234,179,8,.2);color:var(--yellow)} .q-C{background:rgba(239,68,68,.2);color:var(--bear)}
+    .disc { font-size:11px; color:#6b7280; line-height:1.6; margin-top:14px; }
+    #chart { width:100%; height:300px; margin-top:14px; }
+    @media (max-width:640px){ .grid,.quotes{grid-template-columns:repeat(2,1fr)} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="row">
+      <h1>🤖 AI Options Trading — Live Dashboard</h1>
+      <span id="srcBadge" class="badge b-demo">● …</span>
+    </div>
+    <div class="muted" id="updated">Loading…</div>
+
+    <div id="deal"></div>
+
+    <div class="card">
+      <div class="muted" style="margin-bottom:8px">Live quotes</div>
+      <div class="quotes" id="quotes"></div>
+    </div>
+
+    <div class="disc" id="disc"></div>
+  </div>
+
+  <script>
+    const fmt = n => Number(n).toLocaleString("en-IN");
+    function toUnix(t){ return Math.floor(Date.parse(t.replace(" ","T")+"Z")/1000); }
+
+    function renderDeal(d){
+      const wait = d.wait;
+      const isCall = d.instrument === "CE";
+      const aCls = wait ? "a-wait" : isCall ? "a-call" : "a-put";
+      const winCls = isCall ? "bull" : d.instrument==="PE" ? "bear" : "gray";
+      const trendCls = d.mtf_trend==="UP"?"bull":d.mtf_trend==="DOWN"?"bear":"gray";
+      const evPos = (d.expected_value||0) > 0;
+
+      let html = `<div class="card accent">
+        <div class="row">
+          <div>
+            <div class="kicker">🤖 Aaj ka Best Deal — AI Agent v2</div>
+            <div class="big">${d.symbol||"-"} <span class="muted" style="font-size:16px">· ${(d.signal||"").replace("_"," ")}</span></div>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center">
+            ${d.quality?`<span class="badge q-${d.quality}">Grade ${d.quality}</span>`:""}
+            <span class="action ${aCls}">${d.action||"-"}</span>
+          </div>
+        </div>
+        <div class="chips">
+          ${d.mtf_trend?`<span class="chip"><span class="gray">1h Trend:</span> <b class="${trendCls}">${d.mtf_trend}</b></span>`:""}
+          ${typeof d.adx==="number"?`<span class="chip"><span class="gray">ADX:</span> <b>${d.adx}${d.adx>=25?" (strong)":d.adx<18?" (weak)":""}</b></span>`:""}
+          ${d.agreement?`<span class="chip"><span class="gray">Agreement:</span> <b>${d.agreement}</b></span>`:""}
+          ${typeof d.expected_value==="number"?`<span class="chip"><span class="gray">Expected Value:</span> <b class="${evPos?"bull":"bear"}">${evPos?"+":""}${d.expected_value}R</b></span>`:""}
+        </div>`;
+
+      if(!wait){
+        html += `<div style="margin-top:14px">
+          <div class="row"><span class="muted">Paisa banne ka chance (probabilistic)</span><b class="${winCls}">${d.win_chance}%</b></div>
+          <div class="bar"><div class="${isCall?'':'bear-bg'}" style="width:${Math.min(100,d.win_chance)}%;background:${isCall?'var(--bull)':'var(--bear)'}"></div></div>
+          <div class="muted" style="font-size:11px;margin-top:4px">Confidence ${d.confidence}% · score ${d.score}/100 · NOT a guarantee</div>
+        </div>
+        <div class="grid">
+          <div class="stat"><div class="l">Entry</div><div class="v">₹${fmt(d.entry)}</div></div>
+          <div class="stat"><div class="l">Stop Loss</div><div class="v bear">₹${fmt(d.stop_loss)}</div></div>
+          <div class="stat"><div class="l">Target 1</div><div class="v bull">₹${fmt(d.target1)}</div></div>
+          <div class="stat"><div class="l">Target 2</div><div class="v bull">₹${fmt(d.target2)}</div></div>
+        </div>
+        <div class="muted" style="font-size:12px;margin-top:8px">Risk : Reward <b style="color:#fff">${d.risk_reward}</b></div>`;
+      } else {
+        html += `<div class="card" style="margin-top:14px;background:var(--panel2)">Agent ka verdict: <b>WAIT</b>. Abhi koi high-quality trade nahi — trend weak / counter-trend / EV negative. 🙏</div>`;
+      }
+
+      html += `<div class="muted" style="font-size:13px;margin-top:10px"><span class="gray">Why: </span>${d.reason||""}</div>`;
+      if(d.candles && d.candles.length){ html += `<div id="chart"></div>`; }
+      html += `</div>`;
+      document.getElementById("deal").innerHTML = html;
+
+      if(d.candles && d.candles.length && window.LightweightCharts){
+        const el = document.getElementById("chart");
+        const chart = LightweightCharts.createChart(el, {
+          height:300, layout:{background:{color:"transparent"},textColor:"#9ca3af"},
+          grid:{vertLines:{color:"rgba(255,255,255,.05)"},horzLines:{color:"rgba(255,255,255,.05)"}},
+          timeScale:{timeVisible:true,borderColor:"rgba(255,255,255,.1)"},
+          rightPriceScale:{borderColor:"rgba(255,255,255,.1)"}, autoSize:true,
+        });
+        const s = chart.addCandlestickSeries({upColor:"#22c55e",downColor:"#ef4444",borderVisible:false,wickUpColor:"#22c55e",wickDownColor:"#ef4444"});
+        const seen=new Set();
+        const data = d.candles.map(c=>({time:toUnix(c.time),open:c.open,high:c.high,low:c.low,close:c.close}))
+          .filter(c=>!isNaN(c.time)).sort((a,b)=>a.time-b.time).filter(c=>seen.has(c.time)?false:(seen.add(c.time),true));
+        s.setData(data); chart.timeScale().fitContent();
+      }
+    }
+
+    function renderQuotes(qs){
+      document.getElementById("quotes").innerHTML = (qs||[]).map(q=>{
+        const up = q.change>=0;
+        return `<div class="stat"><div class="l">${q.name}</div>
+          <div class="v">₹${fmt(q.last_price)}</div>
+          <div class="${up?'bull':'bear'}" style="font-size:13px">${up?'▲':'▼'} ${q.change} (${q.change_pct}%)</div></div>`;
+      }).join("");
+    }
+
+    async function load(){
+      try{
+        const res = await fetch("./data.json?t="+Date.now());
+        const d = await res.json();
+        const live = d.data_source === "live";
+        const b = document.getElementById("srcBadge");
+        b.className = "badge " + (live?"b-live":"b-demo");
+        b.textContent = live ? "● LIVE DATA" : "● DEMO DATA (synthetic)";
+        const t = new Date(d.generated_at);
+        document.getElementById("updated").textContent =
+          "Last updated: " + (isNaN(t)?d.generated_at:t.toLocaleString("en-IN")) + " · refreshes via GitHub Actions";
+        renderDeal(d.best_deal||{});
+        renderQuotes(d.quotes);
+        document.getElementById("disc").textContent = (d.best_deal&&d.best_deal.disclaimer)||"";
+      }catch(e){
+        document.getElementById("updated").textContent = "data.json load nahi hua: "+e.message;
+      }
+    }
+    load();
+    setInterval(load, 60000); // re-read the static file every 60s
+  </script>
+</body>
+</html>

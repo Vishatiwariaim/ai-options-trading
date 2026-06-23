@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | Select-Object LocalAddress,LocalPort,State,OwningProcess; \"---check 8010 8080 9000---\"; foreach\\($p in 8010,8080,9000\\){ try{ $l=[System.Net.Sockets.TcpListener]::new\\([System.Net.IPAddress]::Loopback,$p\\); $l.Start\\(\\); $l.Stop\\(\\); \"$p FREE\" } catch { \"$p BUSY\" } })",
+      "PowerShell(Get-Process -Id 3648 -ErrorAction SilentlyContinue)",
+      "Bash(.venv/Scripts/python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8010)",
+      "Bash(.venv/Scripts/python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8010 --reload)",
+      "Bash(.venv/Scripts/python.exe -c ' *)"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile app/main.py app/core/config.py app/core/security.py app/db/session.py app/db/models.py app/schemas/schemas.py app/services/market_data.py app/services/indicators.py app/services/option_chain.py app/services/signal_engine.py app/services/risk.py app/services/ml_predict.py app/api/*.py ml/features.py ml/train.py)",
+      "Bash(.venv/Scripts/python.exe -c ' *)"
+    ]
+  }
+}
