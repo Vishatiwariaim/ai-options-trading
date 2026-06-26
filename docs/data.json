@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-25T12:34:15.538820+00:00",
+  "generated_at": "2026-06-26T06:54:31.108191+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-06-25 12:34:15.526894+00:00",
+    "as_of": "2026-06-26 06:54:31.090923+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "HDFCBANK",
     "instrument": "EQ",
     "signal": "NEUTRAL",
-    "win_chance": 63.1,
-    "expected_value": 0.42,
+    "win_chance": 61.9,
+    "expected_value": 0.39,
     "quality": "B",
     "mtf_trend": "UP",
     "adx": 32.5,
     "agreement": "2/4 layers bull",
-    "confidence": 56.6,
-    "score": 57.3,
-    "entry": 796.3,
-    "target1": 799.6,
-    "target2": 801.8,
-    "stop_loss": 793.66,
-    "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 0.7 (neutral) \u00b7 RSI 45.4 \u00b7 EMA20>EMA50",
+    "confidence": 55.0,
+    "score": 55.6,
+    "entry": 796.0,
+    "target1": 799.27,
+    "target2": 801.45,
+    "stop_loss": 793.38,
+    "risk_reward": "1 : 1.2",
+    "reason": "Options PCR 0.67 (bearish) \u00b7 RSI 44.2 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "alternatives": [
       {
@@ -45,8 +45,8 @@
         "signal": "NEUTRAL",
         "instrument": "EQ",
         "quality": "B",
-        "win_probability": 53.2,
-        "expected_value": 0.2
+        "win_probability": 56.0,
+        "expected_value": 0.26
       }
     ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
@@ -2445,10 +2445,10 @@
       },
       {
         "time": "2026-06-25 10:00",
-        "open": 796.3,
-        "high": 796.3,
-        "low": 796.3,
-        "close": 796.3,
+        "open": 796.0,
+        "high": 796.0,
+        "low": 796.0,
+        "close": 796.0,
         "volume": 0.0
       }
     ]
@@ -2458,64 +2458,64 @@
       "symbol": "NIFTY",
       "name": "NIFTY 50",
       "last_price": 24056.0,
-      "change": 24.3,
-      "change_pct": 0.1,
+      "change": 142.3,
+      "change_pct": 0.6,
       "source": "live"
     },
     {
       "symbol": "BANKNIFTY",
       "name": "NIFTY BANK",
       "last_price": 58177.05,
-      "change": 2883.4,
-      "change_pct": 5.21,
+      "change": 3084.15,
+      "change_pct": 5.6,
       "source": "live"
     },
     {
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
       "last_price": 26770.55,
-      "change": 668.4,
-      "change_pct": 2.56,
+      "change": 838.3,
+      "change_pct": 3.23,
       "source": "live"
     },
     {
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
       "last_price": 77100.47,
-      "change": 611.51,
-      "change_pct": 0.8,
+      "change": 1090.77,
+      "change_pct": 1.44,
       "source": "live"
     },
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "last_price": 1318.1,
-      "change": -48.9,
-      "change_pct": -3.58,
+      "last_price": 1316.5,
+      "change": -39.8,
+      "change_pct": -2.93,
       "source": "live"
     },
     {
       "symbol": "TCS",
       "name": "Tata Consultancy",
-      "last_price": 2094.7,
-      "change": -213.5,
-      "change_pct": -9.25,
+      "last_price": 2095.9,
+      "change": -180.3,
+      "change_pct": -7.92,
       "source": "live"
     },
     {
       "symbol": "HDFCBANK",
       "name": "HDFC Bank",
-      "last_price": 796.3,
-      "change": 9.45,
-      "change_pct": 1.2,
+      "last_price": 796.0,
+      "change": 17.1,
+      "change_pct": 2.2,
       "source": "live"
     },
     {
       "symbol": "INFY",
       "name": "Infosys",
-      "last_price": 1041.2,
-      "change": -127.3,
-      "change_pct": -10.89,
+      "last_price": 1042.9,
+      "change": -124.8,
+      "change_pct": -10.69,
       "source": "live"
     }
   ]
