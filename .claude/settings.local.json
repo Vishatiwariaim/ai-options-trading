@@ -5,7 +5,13 @@
       "PowerShell(Get-Process -Id 3648 -ErrorAction SilentlyContinue)",
       "Bash(.venv/Scripts/python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8010)",
       "Bash(.venv/Scripts/python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8010 --reload)",
-      "Bash(.venv/Scripts/python.exe -c ' *)"
+      "Bash(.venv/Scripts/python.exe -c ' *)",
+      "Bash(git pull *)",
+      "Bash(gh run *)",
+      "Bash(git checkout *)",
+      "Bash(git stash *)",
+      "Bash(gh api *)",
+      "Bash(python -c ' *)"
     ]
   }
 }

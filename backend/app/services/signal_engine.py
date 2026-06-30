@@ -242,7 +242,14 @@ def generate(symbol: str) -> dict:
     s4, d4 = _score_options(oc)
     sentiment = 2.5  # neutral placeholder (News & Sentiment AI = roadmap)
 
-    total = round(s1 + s2 + s3 + s4 + sentiment, 1)
+    # Accuracy guard: only trust the options layer when the chain is REAL (NSE).
+    # If it's synthetic, drop it and renormalise so the signal reflects only
+    # real price-derived data instead of fabricated PCR/OI.
+    oc_live = oc.get("source") == "nse"
+    if oc_live:
+        total = round(s1 + s2 + s3 + s4 + sentiment, 1)        # full /100
+    else:
+        total = round((s1 + s2 + s3 + sentiment) / 75 * 100, 1)  # real layers only, rescaled
     signal = _classify(total)
 
     bullish = signal in ("STRONG_BUY", "BUY")
@@ -321,10 +328,14 @@ def generate(symbol: str) -> dict:
             "layer1_indicators": {"score": s1, "weight": 30, "detail": d1},
             "layer2_price_action": {"score": s2, "weight": 20, "detail": d2},
             "layer3_smc": {"score": s3, "weight": 20, "detail": d3},
-            "layer4_options": {"score": s4, "weight": 25, "detail": d4},
+            "layer4_options": {
+                "score": s4, "weight": 25 if oc_live else 0,
+                "used": oc_live,
+                "detail": d4 if oc_live else "excluded — option chain is synthetic (NSE blocked)",
+            },
             "sentiment": {"score": sentiment, "weight": 5, "detail": "neutral (roadmap)"},
             "indicators_snapshot": ind,
-            "option_chain": {k: oc[k] for k in ("pcr", "max_pain", "bias", "support", "resistance")},
+            "option_chain": {k: oc[k] for k in ("pcr", "max_pain", "bias", "support", "resistance", "source")},
         },
         "disclaimer": DISCLAIMER,
     }
