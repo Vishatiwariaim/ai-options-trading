@@ -157,7 +157,7 @@
           document.getElementById("quality").innerHTML =
             "Data quality &nbsp;" +
             pill("Price", dq.price || "?", dq.price === "live") +
-            pill("Option-chain", dq.option_chain || "?", dq.option_chain === "nse") +
+            pill("Option-chain", dq.option_chain || "?", dq.option_chain === "nse" || dq.option_chain === "upstox") +
             `<span class="muted">${dq.delay || ""}</span>`;
         }
         renderDeal(d.best_deal||{});

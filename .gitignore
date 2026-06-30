@@ -18,6 +18,10 @@ npm-debug.log*
 .env
 .env.local
 
+# Upstox access token (SECRET — never commit)
+.upstox_token.json
+backend/.upstox_token.json
+
 # OS / IDE
 .DS_Store
 .vscode/
