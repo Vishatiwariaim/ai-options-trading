@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-30T10:30:48.859408+00:00",
+  "generated_at": "2026-06-30T12:32:19.910933+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-06-30 10:30:48.849506+00:00",
+    "as_of": "2026-06-30 12:32:19.899136+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "INFY",
@@ -21,7 +21,7 @@
     "target2": 1011.48,
     "stop_loss": 995.08,
     "risk_reward": "1 : 1.2",
-    "reason": "Options PCR 1.53 (bullish) \u00b7 RSI 32.6 \u00b7 EMA20<EMA50",
+    "reason": "Options PCR 1.5 (bullish) \u00b7 RSI 32.6 \u00b7 EMA20<EMA50",
     "data_source": "live",
     "alternatives": [
       {
@@ -37,8 +37,8 @@
         "signal": "NEUTRAL",
         "instrument": "EQ",
         "quality": "C",
-        "win_probability": 55.3,
-        "expected_value": 0.25
+        "win_probability": 53.6,
+        "expected_value": 0.21
       },
       {
         "symbol": "NIFTY",
