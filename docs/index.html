@@ -50,6 +50,7 @@
       <span id="srcBadge" class="badge b-demo">● …</span>
     </div>
     <div class="muted" id="updated">Loading…</div>
+    <div class="muted" id="quality" style="margin-top:4px"></div>
 
     <div id="deal"></div>
 
@@ -149,6 +150,16 @@
         const t = new Date(d.generated_at);
         document.getElementById("updated").textContent =
           "Last updated: " + (isNaN(t)?d.generated_at:t.toLocaleString("en-IN")) + " · refreshes via GitHub Actions";
+        const dq = (d.best_deal && d.best_deal.data_quality) || {};
+        if (dq.price || dq.option_chain) {
+          const pill = (label, val, good) =>
+            `<span class="badge ${good ? "b-live" : "b-demo"}" style="margin-right:6px">${label}: ${val}</span>`;
+          document.getElementById("quality").innerHTML =
+            "Data quality &nbsp;" +
+            pill("Price", dq.price || "?", dq.price === "live") +
+            pill("Option-chain", dq.option_chain || "?", dq.option_chain === "nse") +
+            `<span class="muted">${dq.delay || ""}</span>`;
+        }
         renderDeal(d.best_deal||{});
         renderQuotes(d.quotes);
         document.getElementById("disc").textContent = (d.best_deal&&d.best_deal.disclaimer)||"";

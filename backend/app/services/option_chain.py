@@ -17,6 +17,13 @@ _NSE_INDEX = {"NIFTY": "NIFTY", "BANKNIFTY": "BANKNIFTY", "FINNIFTY": "FINNIFTY"
 _cache: dict[str, tuple[float, dict]] = {}
 _TTL = 60
 
+# Tracks whether the chain came from NSE ("nse") or the synthetic fallback.
+_oc_source: dict[str, str] = {}
+
+
+def option_chain_source(symbol: str) -> str:
+    return _oc_source.get(symbol.upper(), "synthetic")
+
 
 def _strike_step(symbol: str) -> int:
     return {"BANKNIFTY": 100, "SENSEX": 100, "FINNIFTY": 50}.get(symbol.upper(), 50)
@@ -52,14 +59,23 @@ def _fetch_nse_chain(symbol: str) -> list[dict] | None:
     if symbol.upper() not in _NSE_INDEX:
         return None
     base = settings.nse_option_chain_base
+    # Browser-like headers + cookie priming — NSE blocks bare/automated requests.
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "Accept": "*/*",
         "Accept-Language": "en-US,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Referer": f"{base}/option-chain",
+        "Connection": "keep-alive",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Dest": "empty",
     }
     try:
-        with httpx.Client(headers=headers, timeout=8.0) as client:
-            client.get(f"{base}/option-chain")  # prime cookies
+        with httpx.Client(headers=headers, timeout=10.0, follow_redirects=True) as client:
+            client.get(f"{base}/")             # set root cookies
+            client.get(f"{base}/option-chain")  # set option-chain cookies
             r = client.get(f"{base}/api/option-chain-indices?symbol={symbol.upper()}")
             r.raise_for_status()
             data = r.json()
@@ -101,7 +117,9 @@ def analyze(symbol: str) -> dict:
         return hit[1]
 
     spot = market_data.get_quote(symbol)["last_price"]
-    rows = _fetch_nse_chain(symbol) or _synthetic_chain(symbol, spot)
+    nse_rows = _fetch_nse_chain(symbol)
+    _oc_source[ckey] = "nse" if nse_rows else "synthetic"
+    rows = nse_rows or _synthetic_chain(symbol, spot)
 
     # Keep strikes within a sensible band of spot for analytics
     band = spot * 0.08
@@ -132,6 +150,7 @@ def analyze(symbol: str) -> dict:
         "total_ce_oi": total_ce,
         "total_pe_oi": total_pe,
         "bias": bias,
+        "source": _oc_source[ckey],
         "rows": rows,
     }
     _cache[ckey] = (time.time(), result)

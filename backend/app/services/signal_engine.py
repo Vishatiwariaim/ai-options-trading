@@ -406,6 +406,11 @@ def best_deal() -> dict:
         "risk_reward": top["risk_reward"],
         "reason": _reason(top),
         "data_source": market_data.data_source(top["symbol"]),
+        "data_quality": {
+            "price": market_data.data_source(top["symbol"]),
+            "option_chain": option_chain.option_chain_source(top["symbol"]),
+            "delay": "~15 min delayed (free Yahoo data)",
+        },
         "alternatives": [
             {"symbol": c["symbol"], "signal": c["signal"], "instrument": c["instrument"],
              "quality": c.get("quality"), "win_probability": c.get("win_probability"),
