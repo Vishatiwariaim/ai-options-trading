@@ -245,7 +245,7 @@ def generate(symbol: str) -> dict:
     # Accuracy guard: only trust the options layer when the chain is REAL (NSE).
     # If it's synthetic, drop it and renormalise so the signal reflects only
     # real price-derived data instead of fabricated PCR/OI.
-    oc_live = oc.get("source") in ("nse", "upstox")
+    oc_live = oc.get("source") == "nse"
     if oc_live:
         total = round(s1 + s2 + s3 + s4 + sentiment, 1)        # full /100
     else:

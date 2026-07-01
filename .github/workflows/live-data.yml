@@ -38,10 +38,6 @@ jobs:
 
       - name: Generate data.json
         working-directory: backend
-        env:
-          # Optional: add a repo secret UPSTOX_ACCESS_TOKEN for REAL option chain.
-          # (Upstox tokens expire 3:30 AM IST daily, so update it before market.)
-          UPSTOX_ACCESS_TOKEN: ${{ secrets.UPSTOX_ACCESS_TOKEN }}
         run: python -m scripts.generate_data
 
       - name: Commit refreshed data

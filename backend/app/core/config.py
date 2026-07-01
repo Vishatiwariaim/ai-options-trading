@@ -19,13 +19,6 @@ class Settings(BaseSettings):
     market_data_provider: str = "yfinance"
     nse_option_chain_base: str = "https://www.nseindia.com"
 
-    # Upstox (optional) — enables REAL option-chain data. Token expires daily
-    # at 3:30 AM IST; regenerate with `python -m scripts.upstox_login`.
-    upstox_api_key: str = ""
-    upstox_api_secret: str = ""
-    upstox_redirect_uri: str = "https://127.0.0.1"
-    upstox_access_token: str = ""
-
     @property
     def cors_origins(self) -> list[str]:
         origins = {self.frontend_origin, "http://localhost:3000", "http://127.0.0.1:3000"}

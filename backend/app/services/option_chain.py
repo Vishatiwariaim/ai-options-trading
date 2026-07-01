@@ -117,15 +117,9 @@ def analyze(symbol: str) -> dict:
         return hit[1]
 
     spot = market_data.get_quote(symbol)["last_price"]
-    # Prefer Upstox (real, accurate) → NSE → synthetic fallback.
-    from app.services import upstox_data
-    up_rows = upstox_data.get_option_chain(symbol)
-    if up_rows:
-        _oc_source[ckey], rows = "upstox", up_rows
-    else:
-        nse_rows = _fetch_nse_chain(symbol)
-        _oc_source[ckey] = "nse" if nse_rows else "synthetic"
-        rows = nse_rows or _synthetic_chain(symbol, spot)
+    nse_rows = _fetch_nse_chain(symbol)
+    _oc_source[ckey] = "nse" if nse_rows else "synthetic"
+    rows = nse_rows or _synthetic_chain(symbol, spot)
 
     # Keep strikes within a sensible band of spot for analytics
     band = spot * 0.08
