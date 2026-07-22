@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-21T12:11:29.404915+00:00",
+  "generated_at": "2026-07-22T05:48:15.495153+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-07-21 12:11:29.388266+00:00",
+    "as_of": "2026-07-22 05:48:15.485664+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "TCS",
     "instrument": "CE",
     "signal": "BUY",
-    "win_chance": 50.6,
-    "expected_value": 0.18,
+    "win_chance": 52.6,
+    "expected_value": 0.23,
     "quality": "C",
     "mtf_trend": "DOWN",
-    "adx": 37.7,
-    "agreement": "1/4 layers bull",
+    "adx": 39.2,
+    "agreement": "2/4 layers bull",
     "confidence": 59.7,
     "score": 60.8,
-    "entry": 2221.1,
-    "target1": 2231.96,
-    "target2": 2240.11,
-    "stop_loss": 2212.95,
+    "entry": 2213.0,
+    "target1": 2226.82,
+    "target2": 2237.18,
+    "stop_loss": 2202.64,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 1.07 (neutral) \u00b7 RSI 36.4 \u00b7 EMA20<EMA50",
+    "reason": "Options PCR 1.12 (neutral) \u00b7 RSI 41.4 \u00b7 EMA20<EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -30,88 +30,16 @@
     },
     "alternatives": [
       {
-        "symbol": "FINNIFTY",
+        "symbol": "INFY",
         "signal": "SELL",
         "instrument": "PE",
-        "quality": "C",
-        "win_probability": 39.7,
-        "expected_value": -0.07
+        "quality": "B",
+        "win_probability": 48.5,
+        "expected_value": 0.13
       }
     ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
-      {
-        "time": "2026-07-06 04:00",
-        "open": 2080.7,
-        "high": 2081.5,
-        "low": 2073.7,
-        "close": 2078.9,
-        "volume": 72594.0
-      },
-      {
-        "time": "2026-07-06 04:15",
-        "open": 2078.5,
-        "high": 2079.8,
-        "low": 2062.0,
-        "close": 2064.0,
-        "volume": 137525.0
-      },
-      {
-        "time": "2026-07-06 04:30",
-        "open": 2064.2,
-        "high": 2064.3,
-        "low": 2056.4,
-        "close": 2056.6,
-        "volume": 141412.0
-      },
-      {
-        "time": "2026-07-06 04:45",
-        "open": 2056.3,
-        "high": 2068.0,
-        "low": 2056.3,
-        "close": 2066.8,
-        "volume": 121431.0
-      },
-      {
-        "time": "2026-07-06 05:00",
-        "open": 2066.8,
-        "high": 2068.2,
-        "low": 2060.1,
-        "close": 2062.3,
-        "volume": 85001.0
-      },
-      {
-        "time": "2026-07-06 05:15",
-        "open": 2062.6,
-        "high": 2069.7,
-        "low": 2062.0,
-        "close": 2066.8,
-        "volume": 87156.0
-      },
-      {
-        "time": "2026-07-06 05:30",
-        "open": 2067.0,
-        "high": 2067.0,
-        "low": 2057.1,
-        "close": 2062.9,
-        "volume": 79676.0
-      },
-      {
-        "time": "2026-07-06 05:45",
-        "open": 2062.8,
-        "high": 2063.9,
-        "low": 2059.2,
-        "close": 2061.4,
-        "volume": 45537.0
-      },
-      {
-        "time": "2026-07-06 06:00",
-        "open": 2062.1,
-        "high": 2064.8,
-        "low": 2060.0,
-        "close": 2062.1,
-        "volume": 38783.0
-      },
       {
         "time": "2026-07-06 06:15",
         "open": 2062.4,
@@ -2433,11 +2361,83 @@
         "volume": 212228.0
       },
       {
-        "time": "2026-07-21 10:00",
-        "open": 2221.1,
-        "high": 2221.1,
-        "low": 2221.1,
-        "close": 2221.1,
+        "time": "2026-07-22 03:45",
+        "open": 2215.1,
+        "high": 2219.6,
+        "low": 2202.8,
+        "close": 2212.7,
+        "volume": 161154.0
+      },
+      {
+        "time": "2026-07-22 04:00",
+        "open": 2212.0,
+        "high": 2214.9,
+        "low": 2210.9,
+        "close": 2212.2,
+        "volume": 72242.0
+      },
+      {
+        "time": "2026-07-22 04:15",
+        "open": 2213.0,
+        "high": 2215.9,
+        "low": 2207.6,
+        "close": 2213.8,
+        "volume": 47050.0
+      },
+      {
+        "time": "2026-07-22 04:30",
+        "open": 2213.8,
+        "high": 2221.4,
+        "low": 2210.0,
+        "close": 2214.5,
+        "volume": 59751.0
+      },
+      {
+        "time": "2026-07-22 04:45",
+        "open": 2214.4,
+        "high": 2215.1,
+        "low": 2201.1,
+        "close": 2206.9,
+        "volume": 111393.0
+      },
+      {
+        "time": "2026-07-22 05:00",
+        "open": 2207.4,
+        "high": 2207.4,
+        "low": 2201.1,
+        "close": 2203.0,
+        "volume": 50847.0
+      },
+      {
+        "time": "2026-07-22 05:15",
+        "open": 2203.0,
+        "high": 2218.4,
+        "low": 2202.4,
+        "close": 2218.4,
+        "volume": 122796.0
+      },
+      {
+        "time": "2026-07-22 05:30",
+        "open": 2218.0,
+        "high": 2218.5,
+        "low": 2212.3,
+        "close": 2213.2,
+        "volume": 170084.0
+      },
+      {
+        "time": "2026-07-22 05:45",
+        "open": 2213.2,
+        "high": 2214.0,
+        "low": 2212.0,
+        "close": 2212.4,
+        "volume": 5601.0
+      },
+      {
+        "time": "2026-07-22 05:48",
+        "open": 2213.0,
+        "high": 2213.0,
+        "low": 2213.0,
+        "close": 2213.0,
         "volume": 0.0
       }
     ]
@@ -2446,65 +2446,65 @@
     {
       "symbol": "NIFTY",
       "name": "NIFTY 50",
-      "last_price": 24187.7,
-      "change": 174.6,
-      "change_pct": 0.73,
+      "last_price": 24024.15,
+      "change": -78.75,
+      "change_pct": -0.33,
       "source": "live"
     },
     {
       "symbol": "BANKNIFTY",
       "name": "NIFTY BANK",
-      "last_price": 57835.35,
-      "change": 149.6,
-      "change_pct": 0.26,
+      "last_price": 57262.9,
+      "change": -672.7,
+      "change_pct": -1.16,
       "source": "live"
     },
     {
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
-      "last_price": 26531.65,
-      "change": 100.5,
-      "change_pct": 0.38,
+      "last_price": 26228.55,
+      "change": -357.0,
+      "change_pct": -1.34,
       "source": "live"
     },
     {
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "last_price": 77470.11,
-      "change": 667.21,
-      "change_pct": 0.87,
+      "last_price": 76847.97,
+      "change": -246.1,
+      "change_pct": -0.32,
       "source": "live"
     },
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "last_price": 1303.7,
-      "change": -5.8,
-      "change_pct": -0.44,
+      "last_price": 1291.0,
+      "change": -35.5,
+      "change_pct": -2.68,
       "source": "live"
     },
     {
       "symbol": "TCS",
       "name": "Tata Consultancy",
-      "last_price": 2221.1,
-      "change": 96.1,
-      "change_pct": 4.52,
+      "last_price": 2213.0,
+      "change": 85.2,
+      "change_pct": 4.0,
       "source": "live"
     },
     {
       "symbol": "HDFCBANK",
       "name": "HDFC Bank",
-      "last_price": 761.45,
-      "change": -18.35,
-      "change_pct": -2.35,
+      "last_price": 753.4,
+      "change": -33.0,
+      "change_pct": -4.2,
       "source": "live"
     },
     {
       "symbol": "INFY",
       "name": "Infosys",
-      "last_price": 1073.5,
-      "change": 22.1,
-      "change_pct": 2.1,
+      "last_price": 1055.2,
+      "change": -10.2,
+      "change_pct": -0.96,
       "source": "live"
     }
   ]
