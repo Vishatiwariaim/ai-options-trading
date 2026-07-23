@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-23T10:39:37.844641+00:00",
+  "generated_at": "2026-07-23T12:13:11.836136+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-07-23 10:39:37.832116+00:00",
+    "as_of": "2026-07-23 12:13:11.819380+00:00",
     "action": "BUY CALL (CE)",
     "wait": false,
     "symbol": "TCS",
@@ -21,7 +21,7 @@
     "target2": 2265.72,
     "stop_loss": 2233.12,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 0.88 (neutral) \u00b7 RSI 65.5 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 0.91 (neutral) \u00b7 RSI 65.5 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
