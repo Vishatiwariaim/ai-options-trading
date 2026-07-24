@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-24T10:33:13.069769+00:00",
+  "generated_at": "2026-07-24T12:06:14.193717+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-07-24 10:33:13.052407+00:00",
+    "as_of": "2026-07-24 12:06:14.176950+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "TCS",
@@ -21,7 +21,7 @@
     "target2": 2273.3,
     "stop_loss": 2245.18,
     "risk_reward": "1 : 1.2",
-    "reason": "Options PCR 1.09 (neutral) \u00b7 RSI 58.9 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 1.19 (neutral) \u00b7 RSI 58.9 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
