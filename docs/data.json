@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-27T10:27:12.767233+00:00",
+  "generated_at": "2026-07-27T13:25:39.896647+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-07-27 10:27:12.750272+00:00",
+    "as_of": "2026-07-27 13:25:39.879073+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "RELIANCE",
@@ -12,16 +12,16 @@
     "expected_value": -0.04,
     "quality": "C",
     "mtf_trend": "DOWN",
-    "adx": 9.3,
+    "adx": 9.8,
     "agreement": "2/4 layers bear",
     "confidence": 61.6,
     "score": 37.1,
-    "entry": 1280.3,
-    "target1": 1276.14,
-    "target2": 1273.02,
-    "stop_loss": 1283.42,
+    "entry": 1280.0,
+    "target1": 1275.72,
+    "target2": 1272.51,
+    "stop_loss": 1283.21,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 1.04 (neutral) \u00b7 RSI 51.0 \u00b7 EMA20<EMA50",
+    "reason": "Options PCR 0.92 (neutral) \u00b7 RSI 49.7 \u00b7 EMA20<EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -2426,10 +2426,10 @@
       {
         "time": "2026-07-27 09:45",
         "open": 1279.7,
-        "high": 1281.2,
+        "high": 1282.0,
         "low": 1279.2,
-        "close": 1280.3,
-        "volume": 891623.0
+        "close": 1280.0,
+        "volume": 917494.0
       }
     ]
   },
