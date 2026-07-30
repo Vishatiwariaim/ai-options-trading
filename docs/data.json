@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-30T10:28:00.881684+00:00",
+  "generated_at": "2026-07-30T12:12:41.511800+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-07-30 10:28:00.869147+00:00",
+    "as_of": "2026-07-30 12:12:41.501978+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "SENSEX",
