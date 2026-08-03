@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-03T10:12:51.645666+00:00",
+  "generated_at": "2026-08-03T13:21:07.703461+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-08-03 10:12:51.631055+00:00",
+    "as_of": "2026-08-03 13:21:07.690246+00:00",
     "action": "BUY CALL (CE)",
     "wait": false,
     "symbol": "TCS",
     "instrument": "CE",
     "signal": "STRONG_BUY",
-    "win_chance": 85.0,
-    "expected_value": 0.98,
+    "win_chance": 83.7,
+    "expected_value": 0.95,
     "quality": "A",
     "mtf_trend": "UP",
-    "adx": 47.4,
-    "agreement": "4/4 layers bull",
-    "confidence": 79.5,
-    "score": 82.8,
-    "entry": 2453.4,
-    "target1": 2469.18,
-    "target2": 2481.01,
-    "stop_loss": 2441.57,
+    "adx": 49.2,
+    "agreement": "3/4 layers bull",
+    "confidence": 80.5,
+    "score": 83.9,
+    "entry": 2473.7,
+    "target1": 2491.56,
+    "target2": 2504.95,
+    "stop_loss": 2460.3,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 1.11 (neutral) \u00b7 structure BOS UP \u00b7 RSI 76.6 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 0.96 (neutral) \u00b7 structure BOS UP \u00b7 RSI 83.2 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -29,6 +29,14 @@
       "delay": "~15 min delayed (free Yahoo data)"
     },
     "alternatives": [
+      {
+        "symbol": "INFY",
+        "signal": "STRONG_BUY",
+        "instrument": "CE",
+        "quality": "A",
+        "win_probability": 81.2,
+        "expected_value": 0.9
+      },
       {
         "symbol": "BANKNIFTY",
         "signal": "BUY",
@@ -44,26 +52,10 @@
         "quality": "A",
         "win_probability": 77.1,
         "expected_value": 0.8
-      },
-      {
-        "symbol": "INFY",
-        "signal": "BUY",
-        "instrument": "CE",
-        "quality": "A",
-        "win_probability": 72.0,
-        "expected_value": 0.68
       }
     ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
-      {
-        "time": "2026-07-16 09:45",
-        "open": 2198.1,
-        "high": 2201.0,
-        "low": 2197.1,
-        "close": 2201.0,
-        "volume": 308929.0
-      },
       {
         "time": "2026-07-17 03:45",
         "open": 2224.7,
@@ -2455,6 +2447,14 @@
         "low": 2445.0,
         "close": 2453.4,
         "volume": 400632.0
+      },
+      {
+        "time": "2026-08-03 09:45",
+        "open": 2451.2,
+        "high": 2473.7,
+        "low": 2451.2,
+        "close": 2473.7,
+        "volume": 112821.0
       }
     ]
   },
@@ -2486,8 +2486,8 @@
     {
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "last_price": 78640.7,
-      "change": 876.79,
+      "last_price": 78639.03,
+      "change": 875.12,
       "change_pct": 1.13,
       "source": "live"
     },
