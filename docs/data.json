@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-07T07:40:19.555531+00:00",
+  "generated_at": "2026-08-07T08:39:28.209629+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-08-07 07:40:19.540791+00:00",
+    "as_of": "2026-08-07 08:39:28.194899+00:00",
     "action": "BUY CALL (CE)",
     "wait": false,
     "symbol": "TCS",
     "instrument": "CE",
     "signal": "BUY",
-    "win_chance": 78.7,
-    "expected_value": 0.84,
-    "quality": "A",
+    "win_chance": 70.0,
+    "expected_value": 0.63,
+    "quality": "B",
     "mtf_trend": "UP",
-    "adx": 33.2,
-    "agreement": "4/4 layers bull",
-    "confidence": 71.5,
-    "score": 73.9,
-    "entry": 2437.3,
-    "target1": 2452.36,
-    "target2": 2463.66,
-    "stop_loss": 2426.01,
+    "adx": 37.6,
+    "agreement": "2/4 layers bull",
+    "confidence": 65.5,
+    "score": 67.2,
+    "entry": 2446.6,
+    "target1": 2460.98,
+    "target2": 2471.76,
+    "stop_loss": 2435.82,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 1.0 (neutral) \u00b7 RSI 62.6 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 0.82 (neutral) \u00b7 RSI 66.3 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -33,53 +33,21 @@
         "symbol": "INFY",
         "signal": "BUY",
         "instrument": "CE",
-        "quality": "B",
-        "win_probability": 64.6,
-        "expected_value": 0.51
+        "quality": "A",
+        "win_probability": 67.8,
+        "expected_value": 0.58
       },
       {
-        "symbol": "FINNIFTY",
+        "symbol": "HDFCBANK",
         "signal": "SELL",
         "instrument": "PE",
         "quality": "B",
-        "win_probability": 49.9,
-        "expected_value": 0.16
+        "win_probability": 48.6,
+        "expected_value": 0.14
       }
     ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
-      {
-        "time": "2026-07-22 08:00",
-        "open": 2205.6,
-        "high": 2211.5,
-        "low": 2205.6,
-        "close": 2209.2,
-        "volume": 28642.0
-      },
-      {
-        "time": "2026-07-22 08:15",
-        "open": 2209.7,
-        "high": 2209.7,
-        "low": 2206.0,
-        "close": 2207.0,
-        "volume": 14644.0
-      },
-      {
-        "time": "2026-07-22 08:30",
-        "open": 2206.0,
-        "high": 2209.8,
-        "low": 2205.6,
-        "close": 2209.3,
-        "volume": 30600.0
-      },
-      {
-        "time": "2026-07-22 08:45",
-        "open": 2209.0,
-        "high": 2211.0,
-        "low": 2207.0,
-        "close": 2208.0,
-        "volume": 21821.0
-      },
       {
         "time": "2026-07-22 09:00",
         "open": 2208.5,
@@ -2437,15 +2405,47 @@
         "open": 2433.9,
         "high": 2439.9,
         "low": 2432.4,
-        "close": 2437.7,
-        "volume": 73961.0
+        "close": 2434.6,
+        "volume": 100188.0
       },
       {
-        "time": "2026-08-07 07:40",
-        "open": 2437.3,
-        "high": 2437.3,
-        "low": 2437.3,
-        "close": 2437.3,
+        "time": "2026-08-07 07:45",
+        "open": 2434.8,
+        "high": 2445.0,
+        "low": 2434.8,
+        "close": 2444.5,
+        "volume": 130134.0
+      },
+      {
+        "time": "2026-08-07 08:00",
+        "open": 2444.5,
+        "high": 2453.3,
+        "low": 2444.2,
+        "close": 2448.1,
+        "volume": 288427.0
+      },
+      {
+        "time": "2026-08-07 08:15",
+        "open": 2448.1,
+        "high": 2449.5,
+        "low": 2444.5,
+        "close": 2448.9,
+        "volume": 95950.0
+      },
+      {
+        "time": "2026-08-07 08:30",
+        "open": 2449.0,
+        "high": 2449.0,
+        "low": 2445.8,
+        "close": 2446.9,
+        "volume": 46622.0
+      },
+      {
+        "time": "2026-08-07 08:39",
+        "open": 2446.6,
+        "high": 2446.6,
+        "low": 2446.6,
+        "close": 2446.6,
         "volume": 0.0
       }
     ]
@@ -2454,65 +2454,65 @@
     {
       "symbol": "NIFTY",
       "name": "NIFTY 50",
-      "last_price": 24555.8,
-      "change": 157.1,
-      "change_pct": 0.64,
+      "last_price": 24542.05,
+      "change": 143.35,
+      "change_pct": 0.59,
       "source": "live"
     },
     {
       "symbol": "BANKNIFTY",
       "name": "NIFTY BANK",
-      "last_price": 57758.25,
-      "change": -442.45,
-      "change_pct": -0.76,
+      "last_price": 57822.5,
+      "change": -378.2,
+      "change_pct": -0.65,
       "source": "live"
     },
     {
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
-      "last_price": 26508.2,
-      "change": -476.85,
-      "change_pct": -1.77,
+      "last_price": 26499.9,
+      "change": -485.15,
+      "change_pct": -1.8,
       "source": "live"
     },
     {
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "last_price": 78514.09,
-      "change": 333.37,
-      "change_pct": 0.43,
+      "last_price": 78598.44,
+      "change": 417.72,
+      "change_pct": 0.53,
       "source": "live"
     },
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "last_price": 1333.2,
-      "change": 24.8,
-      "change_pct": 1.9,
+      "last_price": 1330.8,
+      "change": 22.4,
+      "change_pct": 1.71,
       "source": "live"
     },
     {
       "symbol": "TCS",
       "name": "Tata Consultancy",
-      "last_price": 2437.3,
-      "change": 341.2,
-      "change_pct": 16.28,
+      "last_price": 2446.6,
+      "change": 350.5,
+      "change_pct": 16.72,
       "source": "live"
     },
     {
       "symbol": "HDFCBANK",
       "name": "HDFC Bank",
-      "last_price": 733.0,
-      "change": -96.3,
-      "change_pct": -11.61,
+      "last_price": 729.3,
+      "change": -100.0,
+      "change_pct": -12.06,
       "source": "live"
     },
     {
       "symbol": "INFY",
       "name": "Infosys",
-      "last_price": 1172.7,
-      "change": 100.9,
-      "change_pct": 9.41,
+      "last_price": 1176.4,
+      "change": 104.6,
+      "change_pct": 9.76,
       "source": "live"
     }
   ]
