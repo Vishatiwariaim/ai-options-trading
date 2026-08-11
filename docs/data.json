@@ -1,36 +1,53 @@
 {
-  "generated_at": "2026-08-11T09:58:33.491392+00:00",
+  "generated_at": "2026-08-11T10:56:00.735588+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-08-11 09:58:33.471283+00:00",
+    "as_of": "2026-08-11 10:56:00.717852+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "TCS",
     "instrument": "CE",
     "signal": "BUY",
-    "win_chance": 71.4,
-    "expected_value": 0.67,
+    "win_chance": 72.4,
+    "expected_value": 0.69,
     "quality": "C",
     "mtf_trend": "UP",
-    "adx": 10.8,
-    "agreement": "4/4 layers bull",
-    "confidence": 72.3,
-    "score": 74.8,
-    "entry": 2442.1,
-    "target1": 2453.5,
-    "target2": 2462.05,
-    "stop_loss": 2433.55,
+    "adx": 12.3,
+    "agreement": "3/4 layers bull",
+    "confidence": 76.3,
+    "score": 79.2,
+    "entry": 2445.7,
+    "target1": 2457.86,
+    "target2": 2466.98,
+    "stop_loss": 2436.58,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 0.93 (neutral) \u00b7 RSI 53.6 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 0.83 (neutral) \u00b7 structure BOS UP \u00b7 RSI 57.7 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
       "option_chain": "synthetic",
       "delay": "~15 min delayed (free Yahoo data)"
     },
-    "alternatives": [],
+    "alternatives": [
+      {
+        "symbol": "RELIANCE",
+        "signal": "BUY",
+        "instrument": "CE",
+        "quality": "B",
+        "win_probability": 63.7,
+        "expected_value": 0.49
+      }
+    ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
+      {
+        "time": "2026-07-24 09:45",
+        "open": 2255.1,
+        "high": 2255.7,
+        "low": 2250.1,
+        "close": 2252.0,
+        "volume": 224972.0
+      },
       {
         "time": "2026-07-27 03:45",
         "open": 2280.0,
@@ -2237,7 +2254,7 @@
         "high": 2456.0,
         "low": 2432.0,
         "close": 2444.9,
-        "volume": 194001.0
+        "volume": 99476.0
       },
       {
         "time": "2026-08-11 04:00",
@@ -2418,18 +2435,10 @@
       {
         "time": "2026-08-11 09:30",
         "open": 2440.0,
-        "high": 2442.0,
+        "high": 2445.7,
         "low": 2435.0,
-        "close": 2438.0,
-        "volume": 198502.0
-      },
-      {
-        "time": "2026-08-11 09:44",
-        "open": 2442.1,
-        "high": 2442.1,
-        "low": 2442.1,
-        "close": 2442.1,
-        "volume": 0.0
+        "close": 2445.7,
+        "volume": 310268.0
       }
     ]
   },
@@ -2437,49 +2446,49 @@
     {
       "symbol": "NIFTY",
       "name": "NIFTY 50",
-      "last_price": 24450.25,
-      "change": 243.35,
-      "change_pct": 1.01,
+      "last_price": 24471.7,
+      "change": 264.8,
+      "change_pct": 1.09,
       "source": "live"
     },
     {
       "symbol": "BANKNIFTY",
       "name": "NIFTY BANK",
-      "last_price": 57366.05,
-      "change": -679.85,
-      "change_pct": -1.17,
+      "last_price": 57446.25,
+      "change": -599.65,
+      "change_pct": -1.03,
       "source": "live"
     },
     {
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
-      "last_price": 26404.2,
-      "change": -426.85,
-      "change_pct": -1.59,
+      "last_price": 26432.4,
+      "change": -398.65,
+      "change_pct": -1.49,
       "source": "live"
     },
     {
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "last_price": 78172.46,
-      "change": 603.07,
-      "change_pct": 0.78,
+      "last_price": 78154.25,
+      "change": 584.86,
+      "change_pct": 0.75,
       "source": "live"
     },
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "last_price": 1320.6,
-      "change": 12.8,
-      "change_pct": 0.98,
+      "last_price": 1323.9,
+      "change": 16.1,
+      "change_pct": 1.23,
       "source": "live"
     },
     {
       "symbol": "TCS",
       "name": "Tata Consultancy",
-      "last_price": 2442.1,
-      "change": 373.1,
-      "change_pct": 18.03,
+      "last_price": 2445.7,
+      "change": 376.7,
+      "change_pct": 18.21,
       "source": "live"
     },
     {
@@ -2493,9 +2502,9 @@
     {
       "symbol": "INFY",
       "name": "Infosys",
-      "last_price": 1187.7,
-      "change": 119.7,
-      "change_pct": 11.21,
+      "last_price": 1190.7,
+      "change": 122.7,
+      "change_pct": 11.49,
       "source": "live"
     }
   ]
