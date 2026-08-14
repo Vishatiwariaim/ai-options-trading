@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-14T10:15:57.291347+00:00",
+  "generated_at": "2026-08-14T11:13:04.621391+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-08-14 10:15:57.273655+00:00",
+    "as_of": "2026-08-14 11:13:04.612933+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "INFY",
     "instrument": "CE",
     "signal": "BUY",
-    "win_chance": 55.8,
-    "expected_value": 0.3,
+    "win_chance": 47.2,
+    "expected_value": 0.1,
     "quality": "C",
     "mtf_trend": "DOWN",
-    "adx": 11.1,
-    "agreement": "4/4 layers bull",
-    "confidence": 69.1,
-    "score": 71.2,
+    "adx": 11.5,
+    "agreement": "2/4 layers bull",
+    "confidence": 63.0,
+    "score": 64.5,
     "entry": 1169.2,
-    "target1": 1177.0,
-    "target2": 1182.85,
-    "stop_loss": 1163.35,
+    "target1": 1176.44,
+    "target2": 1181.87,
+    "stop_loss": 1163.77,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 1.12 (neutral) \u00b7 RSI 53.3 \u00b7 EMA20<EMA50",
+    "reason": "Options PCR 1.08 (neutral) \u00b7 RSI 53.3 \u00b7 EMA20<EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -31,14 +31,6 @@
     "alternatives": [],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
-      {
-        "time": "2026-07-29 09:30",
-        "open": 1154.8,
-        "high": 1156.8,
-        "low": 1153.8,
-        "close": 1155.9,
-        "volume": 1572231.0
-      },
       {
         "time": "2026-07-29 09:45",
         "open": 1155.8,
@@ -253,7 +245,7 @@
         "high": 1118.9,
         "low": 1107.3,
         "close": 1114.6,
-        "volume": 774963.0
+        "volume": 2057120.0
       },
       {
         "time": "2026-07-31 04:00",
@@ -2430,6 +2422,14 @@
         "low": 1168.0,
         "close": 1169.2,
         "volume": 496994.0
+      },
+      {
+        "time": "2026-08-14 09:45",
+        "open": 1169.2,
+        "high": 1169.2,
+        "low": 1169.2,
+        "close": 1169.2,
+        "volume": 179528.0
       }
     ]
   },
@@ -2454,8 +2454,8 @@
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
       "last_price": 26213.65,
-      "change": -323.05,
-      "change_pct": -1.22,
+      "change": -114.3,
+      "change_pct": -0.43,
       "source": "live"
     },
     {
