@@ -1,44 +1,61 @@
 {
-  "generated_at": "2026-08-19T10:03:47.661482+00:00",
+  "generated_at": "2026-08-19T10:45:36.983429+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-08-19 10:03:47.645050+00:00",
-    "action": "BUY PUT (PE)",
-    "wait": false,
+    "as_of": "2026-08-19 10:45:36.967229+00:00",
+    "action": "WAIT \u2014 no high-quality trade abhi",
+    "wait": true,
     "symbol": "RELIANCE",
-    "instrument": "PE",
-    "signal": "SELL",
-    "win_chance": 50.2,
-    "expected_value": 0.17,
+    "instrument": "EQ",
+    "signal": "NEUTRAL",
+    "win_chance": 54.4,
+    "expected_value": 0.22,
     "quality": "B",
     "mtf_trend": "DOWN",
-    "adx": 40.0,
-    "agreement": "2/4 layers bear",
-    "confidence": 60.1,
-    "score": 38.8,
-    "entry": 1306.9,
-    "target1": 1301.2,
-    "target2": 1296.93,
-    "stop_loss": 1311.18,
+    "adx": 40.4,
+    "agreement": "1/4 layers bear",
+    "confidence": 52.1,
+    "score": 47.7,
+    "entry": 1311.0,
+    "target1": 1315.44,
+    "target2": 1318.4,
+    "stop_loss": 1307.45,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 1.11 (neutral) \u00b7 structure BOS DOWN \u00b7 RSI 32.1 \u00b7 EMA20<EMA50",
+    "reason": "Options PCR 1.16 (neutral) \u00b7 RSI 44.2 \u00b7 EMA20<EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
       "option_chain": "synthetic",
       "delay": "~15 min delayed (free Yahoo data)"
     },
-    "alternatives": [],
+    "alternatives": [
+      {
+        "symbol": "NIFTY",
+        "signal": "NEUTRAL",
+        "instrument": "EQ",
+        "quality": "C",
+        "win_probability": 53.2,
+        "expected_value": 0.2
+      },
+      {
+        "symbol": "TCS",
+        "signal": "NEUTRAL",
+        "instrument": "EQ",
+        "quality": "C",
+        "win_probability": 50.4,
+        "expected_value": 0.13
+      },
+      {
+        "symbol": "FINNIFTY",
+        "signal": "NEUTRAL",
+        "instrument": "EQ",
+        "quality": "C",
+        "win_probability": 49.5,
+        "expected_value": 0.11
+      }
+    ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
-      {
-        "time": "2026-08-03 09:30",
-        "open": 1309.3,
-        "high": 1309.9,
-        "low": 1306.3,
-        "close": 1309.0,
-        "volume": 706117.0
-      },
       {
         "time": "2026-08-03 09:45",
         "open": 1309.0,
@@ -2245,7 +2262,7 @@
         "high": 1320.0,
         "low": 1312.8,
         "close": 1314.1,
-        "volume": 409768.0
+        "volume": 289020.0
       },
       {
         "time": "2026-08-19 04:00",
@@ -2430,6 +2447,14 @@
         "low": 1304.2,
         "close": 1306.9,
         "volume": 709371.0
+      },
+      {
+        "time": "2026-08-19 09:45",
+        "open": 1306.6,
+        "high": 1311.0,
+        "low": 1306.6,
+        "close": 1311.0,
+        "volume": 340017.0
       }
     ]
   },
@@ -2454,16 +2479,16 @@
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
       "last_price": 26013.0,
-      "change": -95.0,
-      "change_pct": -0.36,
+      "change": -890.35,
+      "change_pct": -3.31,
       "source": "live"
     },
     {
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "last_price": 76902.54,
-      "change": -1248.91,
-      "change_pct": -1.6,
+      "last_price": 76909.68,
+      "change": -1241.77,
+      "change_pct": -1.59,
       "source": "live"
     },
     {
