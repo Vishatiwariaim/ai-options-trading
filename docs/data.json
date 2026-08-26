@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-25T11:01:45.023048+00:00",
+  "generated_at": "2026-08-26T03:51:51.616503+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-08-25 11:01:45.010221+00:00",
+    "as_of": "2026-08-26 03:51:51.598788+00:00",
     "action": "BUY CALL (CE)",
     "wait": false,
     "symbol": "NIFTY",
     "instrument": "CE",
     "signal": "BUY",
-    "win_chance": 77.3,
-    "expected_value": 0.8,
+    "win_chance": 78.0,
+    "expected_value": 0.82,
     "quality": "A",
     "mtf_trend": "UP",
-    "adx": 29.4,
+    "adx": 32.2,
     "agreement": "4/4 layers bull",
-    "confidence": 69.7,
-    "score": 71.9,
-    "entry": 24334.55,
-    "target1": 24395.01,
-    "target2": 24440.35,
-    "stop_loss": 24289.2,
+    "confidence": 70.6,
+    "score": 72.9,
+    "entry": 24337.55,
+    "target1": 24400.07,
+    "target2": 24446.96,
+    "stop_loss": 24290.66,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 1.01 (neutral) \u00b7 structure BOS UP \u00b7 RSI 79.2 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 0.93 (neutral) \u00b7 structure BOS UP \u00b7 RSI 79.5 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -30,7 +30,15 @@
     },
     "alternatives": [
       {
-        "symbol": "SENSEX",
+        "symbol": "FINNIFTY",
+        "signal": "BUY",
+        "instrument": "CE",
+        "quality": "A",
+        "win_probability": 77.3,
+        "expected_value": 0.8
+      },
+      {
+        "symbol": "BANKNIFTY",
         "signal": "BUY",
         "instrument": "CE",
         "quality": "B",
@@ -38,32 +46,16 @@
         "expected_value": 0.73
       },
       {
-        "symbol": "RELIANCE",
+        "symbol": "SENSEX",
         "signal": "BUY",
         "instrument": "CE",
         "quality": "B",
-        "win_probability": 73.0,
-        "expected_value": 0.7
-      },
-      {
-        "symbol": "FINNIFTY",
-        "signal": "BUY",
-        "instrument": "CE",
-        "quality": "B",
-        "win_probability": 68.4,
-        "expected_value": 0.6
+        "win_probability": 74.3,
+        "expected_value": 0.73
       }
     ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
-      {
-        "time": "2026-08-10 04:00",
-        "open": 24557.9,
-        "high": 24560.9,
-        "low": 24511.3,
-        "close": 24521.15,
-        "volume": 0.0
-      },
       {
         "time": "2026-08-10 04:15",
         "open": 24521.75,
@@ -2449,11 +2441,19 @@
         "volume": 0.0
       },
       {
-        "time": "2026-08-25 10:00",
-        "open": 24334.55,
-        "high": 24334.55,
-        "low": 24334.55,
-        "close": 24334.55,
+        "time": "2026-08-26 03:45",
+        "open": 24343.05,
+        "high": 24355.35,
+        "low": 24309.95,
+        "close": 24335.1,
+        "volume": 0.0
+      },
+      {
+        "time": "2026-08-26 03:51",
+        "open": 24337.55,
+        "high": 24337.55,
+        "low": 24337.55,
+        "close": 24337.55,
         "volume": 0.0
       }
     ]
@@ -2462,25 +2462,25 @@
     {
       "symbol": "NIFTY",
       "name": "NIFTY 50",
-      "last_price": 24334.55,
-      "change": 567.1,
-      "change_pct": 2.39,
+      "last_price": 24337.55,
+      "change": 570.1,
+      "change_pct": 2.4,
       "source": "live"
     },
     {
       "symbol": "BANKNIFTY",
       "name": "NIFTY BANK",
-      "last_price": 57514.2,
-      "change": 820.7,
-      "change_pct": 1.45,
+      "last_price": 57880.0,
+      "change": 1186.5,
+      "change_pct": 2.09,
       "source": "live"
     },
     {
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
-      "last_price": 26246.95,
-      "change": 88.45,
-      "change_pct": 0.34,
+      "last_price": 26386.4,
+      "change": 139.45,
+      "change_pct": 0.53,
       "source": "live"
     },
     {
@@ -2494,33 +2494,33 @@
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "last_price": 1317.0,
-      "change": 39.0,
-      "change_pct": 3.05,
+      "last_price": 1310.5,
+      "change": 32.5,
+      "change_pct": 2.54,
       "source": "live"
     },
     {
       "symbol": "TCS",
       "name": "Tata Consultancy",
-      "last_price": 2296.2,
-      "change": 41.9,
-      "change_pct": 1.86,
+      "last_price": 2302.9,
+      "change": 48.6,
+      "change_pct": 2.16,
       "source": "live"
     },
     {
       "symbol": "HDFCBANK",
       "name": "HDFC Bank",
-      "last_price": 727.5,
-      "change": -15.3,
-      "change_pct": -2.06,
+      "last_price": 726.2,
+      "change": -16.6,
+      "change_pct": -2.23,
       "source": "live"
     },
     {
       "symbol": "INFY",
       "name": "Infosys",
-      "last_price": 1144.0,
-      "change": 103.1,
-      "change_pct": 9.9,
+      "last_price": 1134.0,
+      "change": 93.1,
+      "change_pct": 8.94,
       "source": "live"
     }
   ]
