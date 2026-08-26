@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-26T10:17:49.702163+00:00",
+  "generated_at": "2026-08-26T11:00:50.506204+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-08-26 10:17:49.684398+00:00",
+    "as_of": "2026-08-26 11:00:50.488129+00:00",
     "action": "BUY PUT (PE)",
     "wait": false,
     "symbol": "RELIANCE",
@@ -21,7 +21,7 @@
     "target2": 1289.49,
     "stop_loss": 1301.64,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 0.81 (neutral) \u00b7 structure BOS DOWN \u00b7 RSI 30.2 \u00b7 EMA20<EMA50",
+    "reason": "Options PCR 0.7 (neutral) \u00b7 structure BOS DOWN \u00b7 RSI 30.2 \u00b7 EMA20<EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -36,6 +36,14 @@
         "quality": "C",
         "win_probability": 40.6,
         "expected_value": -0.05
+      },
+      {
+        "symbol": "HDFCBANK",
+        "signal": "SELL",
+        "instrument": "PE",
+        "quality": "C",
+        "win_probability": 30.0,
+        "expected_value": -0.3
       }
     ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
