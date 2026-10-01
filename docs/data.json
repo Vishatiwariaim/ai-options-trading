@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-01T09:46:05.259354+00:00",
+  "generated_at": "2026-10-01T16:52:45.319998+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-10-01 09:46:05.246318+00:00",
+    "as_of": "2026-10-01 16:52:45.309937+00:00",
     "action": "BUY CALL (CE)",
     "wait": false,
     "symbol": "INFY",
     "instrument": "CE",
     "signal": "BUY",
-    "win_chance": 81.8,
-    "expected_value": 0.91,
+    "win_chance": 75.7,
+    "expected_value": 0.77,
     "quality": "A",
     "mtf_trend": "UP",
-    "adx": 29.1,
+    "adx": 28.0,
     "agreement": "4/4 layers bull",
-    "confidence": 75.5,
-    "score": 78.3,
-    "entry": 1028.9,
-    "target1": 1039.72,
-    "target2": 1047.84,
-    "stop_loss": 1020.79,
+    "confidence": 67.6,
+    "score": 69.6,
+    "entry": 1035.0,
+    "target1": 1047.32,
+    "target2": 1056.56,
+    "stop_loss": 1025.76,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 0.93 (neutral) \u00b7 structure BOS UP \u00b7 RSI 69.7 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 0.93 (neutral) \u00b7 structure BOS UP \u00b7 RSI 72.8 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -40,6 +40,14 @@
     ],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
+      {
+        "time": "2026-09-15 09:00",
+        "open": 1075.7,
+        "high": 1077.0,
+        "low": 1075.3,
+        "close": 1075.7,
+        "volume": 264930.0
+      },
       {
         "time": "2026-09-15 09:15",
         "open": 1075.7,
@@ -2246,7 +2254,7 @@
         "high": 1019.2,
         "low": 1006.85,
         "close": 1009.7,
-        "volume": 1227016.0
+        "volume": 722060.0
       },
       {
         "time": "2026-10-01 04:00",
@@ -2427,18 +2435,10 @@
       {
         "time": "2026-10-01 09:30",
         "open": 1022.0,
-        "high": 1026.4,
+        "high": 1035.0,
         "low": 1020.8,
-        "close": 1025.3,
-        "volume": 1903913.0
-      },
-      {
-        "time": "2026-10-01 09:44",
-        "open": 1028.9,
-        "high": 1028.9,
-        "low": 1028.9,
-        "close": 1028.9,
-        "volume": 0.0
+        "close": 1035.0,
+        "volume": 2820855.0
       }
     ]
   },
@@ -2446,49 +2446,49 @@
     {
       "symbol": "NIFTY",
       "name": "NIFTY 50",
-      "last_price": 22446.0,
-      "change": -1609.8,
-      "change_pct": -6.69,
+      "last_price": 22421.95,
+      "change": -1633.85,
+      "change_pct": -6.79,
       "source": "live"
     },
     {
       "symbol": "BANKNIFTY",
       "name": "NIFTY BANK",
-      "last_price": 54565.1,
-      "change": -2844.5,
-      "change_pct": -4.95,
+      "last_price": 54450.75,
+      "change": -2958.85,
+      "change_pct": -5.15,
       "source": "live"
     },
     {
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
-      "last_price": 24588.3,
-      "change": -61.2,
-      "change_pct": -0.25,
+      "last_price": 24556.1,
+      "change": -93.4,
+      "change_pct": -0.38,
       "source": "live"
     },
     {
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "last_price": 71860.06,
-      "change": -5084.22,
-      "change_pct": -6.61,
+      "last_price": 71909.7,
+      "change": -5034.58,
+      "change_pct": -6.54,
       "source": "live"
     },
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "last_price": 1170.4,
-      "change": -138.6,
-      "change_pct": -10.59,
+      "last_price": 1167.7,
+      "change": -141.3,
+      "change_pct": -10.79,
       "source": "live"
     },
     {
       "symbol": "TCS",
       "name": "Tata Consultancy",
-      "last_price": 2075.9,
-      "change": -293.1,
-      "change_pct": -12.37,
+      "last_price": 2075.0,
+      "change": -294.0,
+      "change_pct": -12.41,
       "source": "live"
     },
     {
@@ -2502,9 +2502,9 @@
     {
       "symbol": "INFY",
       "name": "Infosys",
-      "last_price": 1028.9,
-      "change": -127.1,
-      "change_pct": -10.99,
+      "last_price": 1035.0,
+      "change": -121.0,
+      "change_pct": -10.47,
       "source": "live"
     }
   ]
