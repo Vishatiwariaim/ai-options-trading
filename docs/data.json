@@ -1,101 +1,36 @@
 {
-  "generated_at": "2026-10-22T08:18:05.851847+00:00",
+  "generated_at": "2026-10-22T13:59:20.068429+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-10-22 08:18:05.837090+00:00",
+    "as_of": "2026-10-22 13:59:20.058703+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "TCS",
-    "instrument": "EQ",
-    "signal": "NEUTRAL",
-    "win_chance": 58.6,
-    "expected_value": 0.32,
-    "quality": "B",
+    "instrument": "CE",
+    "signal": "BUY",
+    "win_chance": 65.4,
+    "expected_value": 0.53,
+    "quality": "C",
     "mtf_trend": "UP",
-    "adx": 23.2,
-    "agreement": "2/4 layers bull",
-    "confidence": 54.6,
-    "score": 55.1,
-    "entry": 2495.4,
-    "target1": 2509.66,
-    "target2": 2519.18,
-    "stop_loss": 2483.99,
-    "risk_reward": "1 : 1.2",
-    "reason": "Options PCR 0.95 (neutral) \u00b7 RSI 45.5 \u00b7 EMA20>EMA50",
+    "adx": 17.1,
+    "agreement": "3/4 layers bull",
+    "confidence": 67.3,
+    "score": 69.2,
+    "entry": 2506.9,
+    "target1": 2526.42,
+    "target2": 2541.06,
+    "stop_loss": 2492.26,
+    "risk_reward": "1 : 1.3",
+    "reason": "Options PCR 1.11 (neutral) \u00b7 RSI 53.5 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
       "option_chain": "synthetic",
       "delay": "~15 min delayed (free Yahoo data)"
     },
-    "alternatives": [
-      {
-        "symbol": "HDFCBANK",
-        "signal": "NEUTRAL",
-        "instrument": "EQ",
-        "quality": "B",
-        "win_probability": 55.0,
-        "expected_value": 0.24
-      },
-      {
-        "symbol": "RELIANCE",
-        "signal": "NEUTRAL",
-        "instrument": "EQ",
-        "quality": "B",
-        "win_probability": 53.5,
-        "expected_value": 0.2
-      },
-      {
-        "symbol": "FINNIFTY",
-        "signal": "NEUTRAL",
-        "instrument": "EQ",
-        "quality": "B",
-        "win_probability": 52.2,
-        "expected_value": 0.18
-      }
-    ],
+    "alternatives": [],
     "disclaimer": "Probabilistic signal, NOT guaranteed financial advice. No profit or accuracy guarantee. Trade at your own risk. Paper trading recommended.",
     "candles": [
-      {
-        "time": "2026-10-05 08:15",
-        "open": 2107.5,
-        "high": 2112.4,
-        "low": 2107.5,
-        "close": 2108.9,
-        "volume": 142431.0
-      },
-      {
-        "time": "2026-10-05 08:30",
-        "open": 2108.3,
-        "high": 2109.8,
-        "low": 2100.2,
-        "close": 2102.1,
-        "volume": 132558.0
-      },
-      {
-        "time": "2026-10-05 08:45",
-        "open": 2102.7,
-        "high": 2106.2,
-        "low": 2098.1,
-        "close": 2106.2,
-        "volume": 105249.0
-      },
-      {
-        "time": "2026-10-05 09:00",
-        "open": 2106.5,
-        "high": 2107.1,
-        "low": 2103.9,
-        "close": 2106.6,
-        "volume": 115172.0
-      },
-      {
-        "time": "2026-10-05 09:15",
-        "open": 2106.0,
-        "high": 2106.5,
-        "low": 2102.8,
-        "close": 2105.6,
-        "volume": 200643.0
-      },
       {
         "time": "2026-10-05 09:30",
         "open": 2106.0,
@@ -1578,9 +1513,9 @@
       },
       {
         "time": "2026-10-15 06:15",
-        "open": 2366.0,
+        "open": 2366.1,
         "high": 2366.1,
-        "low": 2365.3,
+        "low": 2365.9,
         "close": 2366.0,
         "volume": 287317.0
       },
@@ -2302,7 +2237,7 @@
         "high": 2523.8,
         "low": 2498.1,
         "close": 2514.8,
-        "volume": 371049.0
+        "volume": 208268.0
       },
       {
         "time": "2026-10-22 04:00",
@@ -2443,18 +2378,58 @@
       {
         "time": "2026-10-22 08:15",
         "open": 2495.7,
-        "high": 2496.0,
+        "high": 2504.0,
         "low": 2494.0,
-        "close": 2495.4,
-        "volume": 10167.0
+        "close": 2503.5,
+        "volume": 74451.0
       },
       {
-        "time": "2026-10-22 08:18",
-        "open": 2495.4,
-        "high": 2495.4,
-        "low": 2495.4,
-        "close": 2495.4,
-        "volume": 0.0
+        "time": "2026-10-22 08:30",
+        "open": 2503.5,
+        "high": 2509.0,
+        "low": 2498.4,
+        "close": 2504.8,
+        "volume": 101800.0
+      },
+      {
+        "time": "2026-10-22 08:45",
+        "open": 2504.7,
+        "high": 2509.7,
+        "low": 2500.0,
+        "close": 2501.1,
+        "volume": 177289.0
+      },
+      {
+        "time": "2026-10-22 09:00",
+        "open": 2500.4,
+        "high": 2507.5,
+        "low": 2500.0,
+        "close": 2507.0,
+        "volume": 67872.0
+      },
+      {
+        "time": "2026-10-22 09:15",
+        "open": 2507.0,
+        "high": 2507.1,
+        "low": 2498.7,
+        "close": 2499.3,
+        "volume": 131236.0
+      },
+      {
+        "time": "2026-10-22 09:30",
+        "open": 2499.6,
+        "high": 2507.2,
+        "low": 2495.9,
+        "close": 2505.5,
+        "volume": 329087.0
+      },
+      {
+        "time": "2026-10-22 09:45",
+        "open": 2505.7,
+        "high": 2506.9,
+        "low": 2505.7,
+        "close": 2506.9,
+        "volume": 201125.0
       }
     ]
   },
@@ -2462,65 +2437,65 @@
     {
       "symbol": "NIFTY",
       "name": "NIFTY 50",
-      "last_price": 22629.45,
-      "change": -699.55,
-      "change_pct": -3.0,
+      "last_price": 22687.65,
+      "change": -641.35,
+      "change_pct": -2.75,
       "source": "live"
     },
     {
       "symbol": "BANKNIFTY",
       "name": "NIFTY BANK",
-      "last_price": 54799.6,
-      "change": -1415.95,
-      "change_pct": -2.52,
+      "last_price": 54925.7,
+      "change": -1289.85,
+      "change_pct": -2.29,
       "source": "live"
     },
     {
       "symbol": "FINNIFTY",
       "name": "NIFTY FIN SERVICE",
-      "last_price": 24572.95,
-      "change": -414.15,
-      "change_pct": -1.66,
+      "last_price": 24657.7,
+      "change": -329.4,
+      "change_pct": -1.32,
       "source": "live"
     },
     {
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "last_price": 73209.77,
-      "change": -1319.31,
-      "change_pct": -1.77,
+      "last_price": 73249.39,
+      "change": -1279.69,
+      "change_pct": -1.72,
       "source": "live"
     },
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "last_price": 1187.8,
-      "change": -52.6,
-      "change_pct": -4.24,
+      "last_price": 1184.5,
+      "change": -55.9,
+      "change_pct": -4.51,
       "source": "live"
     },
     {
       "symbol": "TCS",
       "name": "Tata Consultancy",
-      "last_price": 2495.4,
-      "change": 390.4,
-      "change_pct": 18.55,
+      "last_price": 2506.9,
+      "change": 401.9,
+      "change_pct": 19.09,
       "source": "live"
     },
     {
       "symbol": "HDFCBANK",
       "name": "HDFC Bank",
-      "last_price": 692.05,
-      "change": -46.55,
-      "change_pct": -6.3,
+      "last_price": 694.05,
+      "change": -44.55,
+      "change_pct": -6.03,
       "source": "live"
     },
     {
       "symbol": "INFY",
       "name": "Infosys",
-      "last_price": 1145.8,
-      "change": 116.4,
-      "change_pct": 11.31,
+      "last_price": 1153.35,
+      "change": 123.95,
+      "change_pct": 12.04,
       "source": "live"
     }
   ]
