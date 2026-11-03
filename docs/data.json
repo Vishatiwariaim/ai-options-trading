@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-03T10:27:48.486876+00:00",
+  "generated_at": "2026-11-03T17:59:07.295361+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-11-03 10:27:48.477501+00:00",
+    "as_of": "2026-11-03 17:59:07.285443+00:00",
     "action": "BUY CALL (CE)",
     "wait": false,
     "symbol": "RELIANCE",
     "instrument": "CE",
     "signal": "BUY",
-    "win_chance": 75.5,
-    "expected_value": 0.76,
+    "win_chance": 78.6,
+    "expected_value": 0.83,
     "quality": "A",
     "mtf_trend": "UP",
-    "adx": 51.6,
+    "adx": 52.1,
     "agreement": "3/4 layers bull",
-    "confidence": 69.9,
-    "score": 72.1,
-    "entry": 1300.8,
-    "target1": 1311.96,
-    "target2": 1320.33,
-    "stop_loss": 1292.43,
+    "confidence": 73.8,
+    "score": 76.5,
+    "entry": 1307.9,
+    "target1": 1320.04,
+    "target2": 1329.14,
+    "stop_loss": 1298.8,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 1.03 (neutral) \u00b7 structure BOS UP \u00b7 RSI 69.7 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 1.04 (neutral) \u00b7 structure BOS UP \u00b7 RSI 74.3 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -2451,10 +2451,10 @@
       {
         "time": "2026-11-03 09:45",
         "open": 1300.8,
-        "high": 1300.8,
+        "high": 1307.9,
         "low": 1300.8,
-        "close": 1300.8,
-        "volume": 7161.0
+        "close": 1307.9,
+        "volume": 4152294.0
       }
     ]
   },
