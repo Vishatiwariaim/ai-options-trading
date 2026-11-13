@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-13T10:31:11.019318+00:00",
+  "generated_at": "2026-11-13T18:03:35.615703+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-11-13 10:31:11.012321+00:00",
+    "as_of": "2026-11-13 18:03:35.599413+00:00",
     "action": "BUY CALL (CE)",
     "wait": false,
     "symbol": "SENSEX",
@@ -21,7 +21,7 @@
     "target2": 82020.54,
     "stop_loss": 81408.99,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 0.92 (neutral) \u00b7 structure BOS UP \u00b7 RSI 51.0 \u00b7 EMA20<EMA50",
+    "reason": "Options PCR 0.99 (neutral) \u00b7 structure BOS UP \u00b7 RSI 51.0 \u00b7 EMA20<EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -2258,7 +2258,7 @@
       },
       {
         "time": "2026-11-13 04:00",
-        "open": 81476.93,
+        "open": 81479.06,
         "high": 81695.76,
         "low": 81437.72,
         "close": 81657.25,
