@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-16T10:38:17.382536+00:00",
+  "generated_at": "2026-11-16T20:40:41.966418+00:00",
   "data_source": "live",
   "best_deal": {
-    "as_of": "2026-11-16 10:38:17.376946+00:00",
+    "as_of": "2026-11-16 20:40:41.958760+00:00",
     "action": "WAIT \u2014 no high-quality trade abhi",
     "wait": true,
     "symbol": "RELIANCE",
@@ -21,7 +21,7 @@
     "target2": 1357.99,
     "stop_loss": 1339.14,
     "risk_reward": "1 : 1.3",
-    "reason": "Options PCR 0.81 (neutral) \u00b7 RSI 60.1 \u00b7 EMA20>EMA50",
+    "reason": "Options PCR 0.87 (neutral) \u00b7 RSI 60.1 \u00b7 EMA20>EMA50",
     "data_source": "live",
     "data_quality": {
       "price": "live",
@@ -1054,7 +1054,7 @@
         "high": 1315.5,
         "low": 1311.0,
         "close": 1311.0,
-        "volume": 2825398.0
+        "volume": 19.0
       },
       {
         "time": "2026-11-05 03:45",
@@ -1062,7 +1062,7 @@
         "high": 1325.0,
         "low": 1315.5,
         "close": 1317.0,
-        "volume": 630933.0
+        "volume": 1729798.0
       },
       {
         "time": "2026-11-05 04:00",
